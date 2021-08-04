@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Ruler.qml</file>
+        <file>ItemMeasurer.qml</file>
+        <file>sample.jpg</file>
+    </qresource>
+</RCC>
