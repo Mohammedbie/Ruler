@@ -16,6 +16,7 @@ Window {
             height: 200
 
             border.color: "blue"
+            color: "green"
 
             Text {
                 id: name
@@ -39,6 +40,7 @@ Window {
             width: 20
             height: 50
             border.color: "red"
+            color: "yellow"
             Text {
                 text: "Hello Ruler!"
             }

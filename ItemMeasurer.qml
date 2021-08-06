@@ -11,7 +11,7 @@ Item {
     {
         for (var i = 0; i < parentItem.children.length; i++)
         {
-            if(parentItem.children[i]===this || parentItem.children[i].isRuler || parentItem.children[i].isBoundingRect)
+            if(parentItem.children[i]===this || parentItem.children[i].isRuler)
                 continue;
 
             var cords = parentItem.mapToItem(null, parentItem.children[i].x, parentItem.children[i].y);
@@ -32,6 +32,8 @@ Item {
                }
                component.createObject(parent, {startX: cords.x, startY: cords.y-verticalPadding,endX:cords.x+parentItem.children[i].width,endY:cords.y-verticalPadding});
                component.createObject(parent, {startX: cords.x-20, startY: cords.y,endX:cords.x-20,endY:cords.y+parentItem.children[i].height});
+
+
                horizontalLines.push(cords.y-verticalPadding);
             }
 

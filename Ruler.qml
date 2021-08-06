@@ -40,14 +40,6 @@ Shape {
         y: shape.startY-(endsHeight/2)*shape.horizontal
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-
-        Rectangle {
-            id: textRectangle
-            width: measure.contentWidth
-            height: measure.contentHeight
-            anchors.centerIn: measure
-            z: measure.z-1
-        }
     }
 
 }
